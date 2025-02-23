@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className='bg-black'>Header</div>
+    <div className='bg-lime-700'>Header</div>
   )
 }
