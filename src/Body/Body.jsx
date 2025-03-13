@@ -19,8 +19,8 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div>
-        <p>ทำไมต้องเลือกกระจกอลูมิเนียม?</p>
+      <div className="text-center text-[#004d21] text-lg leading-relaxed">
+        <p className="text-2xl font-bold">ทำไมต้องเลือกกระจกอลูมิเนียม?</p>
         <p>
           แข็งแรงและทนทาน -
           อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
