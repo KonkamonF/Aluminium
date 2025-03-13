@@ -4,9 +4,9 @@ import side from "../assets/Sidebody.png";
 export default function Body() {
   return (
     <>
-      <div className="text-center text-[#004d21] flex items-center mx-20 pb-4">
+      <div className="text-center text-[#004d21] flex items-center mx-60 pb-4">
         <img src={side} alt="" className="w-[500px]" />
-        <div className="px-10">
+        <div className="pl-10">
           <p className="text-2xl font-bold">
             บริการติดตั้งกระจกอลูมิเนียม
             เพิ่มความหรูหราและทันสมัยให้กับบ้านและอาคารของคุณ
@@ -19,8 +19,8 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-20">
-        <div className="px-10">
+      <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-60">
+        <div className="pr-10">
           <p className="text-2xl font-bold pb-4">
             ทำไมต้องเลือกกระจกอลูมิเนียม?
           </p>
