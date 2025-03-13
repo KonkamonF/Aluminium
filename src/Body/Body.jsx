@@ -4,7 +4,7 @@ import side from "../assets/Sidebody.png";
 export default function Body() {
   return (
     <>
-      <div className="text-center text-[#004d21] flex items-center mx-20">
+      <div className="text-center text-[#004d21] flex items-center mx-20 pb-4">
         <img src={side} alt="" className="w-[500px]" />
         <div className="px-10">
           <p className="text-2xl font-bold">
@@ -19,7 +19,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="text-center text-[#004d21] text-lg leading-relaxed flex mx-20">
+      <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-20">
         <div className="px-10">
           <p className="text-2xl font-bold pb-4">
             ทำไมต้องเลือกกระจกอลูมิเนียม?
@@ -27,7 +27,7 @@ export default function Body() {
           <p className="text-start">
             <span className="font-bold">แข็งแรงและทนทาน - </span>
             อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
-            เหมาะสำหรับการใช้งานทั้งภายในและภายนอก{" "}
+            เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
           </p>
           <p className="text-start">
             <span className="font-bold">ดีไซน์ทันสมัย - </span>
