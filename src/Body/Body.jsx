@@ -4,9 +4,9 @@ import side from "../assets/Sidebody.png";
 export default function Body() {
   return (
     <>
-      <div className="text-center text-[#004d21] flex">
+      <div className="text-center text-[#004d21] flex items-center mx-20">
         <img src={side} alt="" className="w-[500px]" />
-        <div className="flex ">
+        <div className="px-10">
           <p className="text-2xl font-bold">
             บริการติดตั้งกระจกอลูมิเนียม
             เพิ่มความหรูหราและทันสมัยให้กับบ้านและอาคารของคุณ
