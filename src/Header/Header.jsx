@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../assets/PG.png";
+import Banner from "../assets/Banner.png";
 
 export default function Header() {
   return (
-    <div className="bg-[#004d21] m-5 rounded-t-2xl text-center p-2 text-white">
-      <img src={Logo} alt="" className="w-40" />
+    <div className=" m-5 rounded-t-2xl text-center p-2 text-white">
+      <img src={Banner} alt="" className="rounded-t-2xl w-screen" />
       <p className="text-4xl">ร้านพงษ์เจริญ กระจกอลูมิเนียม สากเหล็ก พิจิตร</p>
       <p className="text-3xl pt-4">
         รับติดตั้ง กั้นห้อง ซ่อมแซ่ม กระจกอลูมิเนียม
