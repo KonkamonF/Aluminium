@@ -32,28 +32,29 @@ export default function Body() {
           </div>
           <img src={side} alt="" className="w-[50%] rounded-4xl" />
         </div>
+        <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-60 pt-4">
+          <p className="flex flex-col">
+            <span className="font-bold pb-4">แข็งแรงและทนทาน</span>
+            อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
+            เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
+          </p>
+          <p className="flex flex-col">
+            <span className="font-bold pb-4">ดีไซน์ทันสมัย</span>
+            กระจกอลูมิเนียมช่วยให้บ้านหรืออาคารของคุณดูโปร่งแสงและโมเดิร์น
+            เพิ่มความสวยงามและสไตล์ที่เป็นเอกลักษณ์
+          </p>
+          <p className="flex flex-col">
+            <span className="font-bold pb-4">ลดเสียงรบกวน</span>
+            กระจกอลูมิเนียมคุณภาพสูงสามารถช่วยลดเสียงรบกวนจากภายนอก
+            ทำให้บรรยากาศภายในเงียบสงบมากขึ้น
+          </p>
+          <p className="flex flex-col">
+            <span className="font-bold pb-4">ดูแลรักษาง่าย</span>
+            วัสดุอลูมิเนียมและกระจกสามารถทำความสะอาดได้ง่าย
+            ไม่ต้องกังวลเรื่องเชื้อรา หรือการผุพังเหมือนไม้
+          </p>
+        </div>
       </div>
-      
-      <p className="text-start">
-        <span className="font-bold">แข็งแรงและทนทาน - </span>
-        อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
-        เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
-      </p>
-      <p className="text-start">
-        <span className="font-bold">ดีไซน์ทันสมัย - </span>
-        กระจกอลูมิเนียมช่วยให้บ้านหรืออาคารของคุณดูโปร่งแสงและโมเดิร์น
-        เพิ่มความสวยงามและสไตล์ที่เป็นเอกลักษณ์
-      </p>
-      <p className="text-start">
-        <span className="font-bold">ลดเสียงรบกวน - </span>
-        กระจกอลูมิเนียมคุณภาพสูงสามารถช่วยลดเสียงรบกวนจากภายนอก
-        ทำให้บรรยากาศภายในเงียบสงบมากขึ้น
-      </p>
-      <p className="text-start">
-        <span className="font-bold">ดูแลรักษาง่าย - </span>
-        วัสดุอลูมิเนียมและกระจกสามารถทำความสะอาดได้ง่าย
-        ไม่ต้องกังวลเรื่องเชื้อรา หรือการผุพังเหมือนไม้
-      </p>
     </>
   );
 }
