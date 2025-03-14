@@ -1,5 +1,9 @@
 import React from "react";
 import side from "../assets/Sidebody.png";
+import { LuWarehouse } from "react-icons/lu";
+import { MdOutlineEngineering } from "react-icons/md";
+import { BiVolumeMute } from "react-icons/bi";
+import { FaAward } from "react-icons/fa";
 
 export default function Body() {
   return (
@@ -32,24 +36,30 @@ export default function Body() {
           </div>
           <img src={side} alt="" className="w-[50%] rounded-4xl" />
         </div>
-        <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-60 pt-4">
-          <p className="flex flex-col">
-            <span className="font-bold pb-4">แข็งแรงและทนทาน</span>
+      </div>
+      <div className="bg-[#0d4927] py-18">
+        <div className="text-center text-white text-lg leading-relaxed flex items-center mx-60 pt-4">
+          <p className="flex flex-col justify-center items-center">
+            <LuWarehouse size={60} />
+            <span className="font-bold py-4">แข็งแรงและทนทาน</span>
             อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
             เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
           </p>
-          <p className="flex flex-col">
-            <span className="font-bold pb-4">ดีไซน์ทันสมัย</span>
+          <p className="flex flex-col justify-center items-center">
+            <MdOutlineEngineering size={60} />
+            <span className="font-bold py-4">ดีไซน์ทันสมัย</span>
             กระจกอลูมิเนียมช่วยให้บ้านหรืออาคารของคุณดูโปร่งแสงและโมเดิร์น
             เพิ่มความสวยงามและสไตล์ที่เป็นเอกลักษณ์
           </p>
-          <p className="flex flex-col">
-            <span className="font-bold pb-4">ลดเสียงรบกวน</span>
+          <p className="flex flex-col justify-center items-center">
+            <BiVolumeMute size={60} />
+            <span className="font-bold py-4">ลดเสียงรบกวน</span>
             กระจกอลูมิเนียมคุณภาพสูงสามารถช่วยลดเสียงรบกวนจากภายนอก
             ทำให้บรรยากาศภายในเงียบสงบมากขึ้น
           </p>
-          <p className="flex flex-col">
-            <span className="font-bold pb-4">ดูแลรักษาง่าย</span>
+          <p className="flex flex-col justify-center items-center">
+            <FaAward size={60} />
+            <span className="font-bold py-4">ดูแลรักษาง่าย</span>
             วัสดุอลูมิเนียมและกระจกสามารถทำความสะอาดได้ง่าย
             ไม่ต้องกังวลเรื่องเชื้อรา หรือการผุพังเหมือนไม้
           </p>
