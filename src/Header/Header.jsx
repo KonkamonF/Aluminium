@@ -15,6 +15,7 @@ export default function Header() {
             รับติดตั้ง กั้นห้อง ซ่อมแซ่ม กระจกอลูมิเนียม
           </p>
           <p className="text-5xl pt-3">โทร 081-973-3078</p>
+          <p className="text-5xl pt-3">โทร 081-973-3078</p>
         </div>
       </div>
     </>
