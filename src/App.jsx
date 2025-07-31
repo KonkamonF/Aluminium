@@ -6,8 +6,8 @@ import Footer from "./Footer/Footer";
 export default function App() {
   return (
     <>
-      {/* <Header />
-      <Body /> */}
+      <Header />
+      <Body />
       <Footer/>
     </>
   );
