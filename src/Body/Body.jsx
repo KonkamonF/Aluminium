@@ -16,7 +16,7 @@ export default function Body() {
               บริการติดตั้งกระจกอลูมิเนียม
               เพิ่มความทันสมัยให้กับบ้านและอาคารของคุณ
             </p>
-            <p className="text-lg text-start leading-relaxed pt-4">
+            <p className="text-start leading-relaxed pt-4">
               กระจกอลูมิเนียมเป็นวัสดุที่ได้รับความนิยมอย่างมากในงานก่อสร้างและตกแต่ง
               เนื่องจากมีคุณสมบัติที่โดดเด่น ทั้งในด้านความแข็งแรง ความทนทาน
               และการออกแบบที่ทันสมัย ซึ่งช่วยเสริมภาพลักษณ์ของบ้าน อาคารสำนักงาน
@@ -27,39 +27,40 @@ export default function Body() {
         <div className="text-center text-[#004d21] text-lg leading-relaxed flex items-center mx-60">
           <div className="pr-10">
             <p className="text-2xl font-bold pb-4">ทำไมต้องเลือกเรา?</p>
-            <p>
-              ใช้วัสดุคุณภาพสูง แข็งแรง ทนทาน ทีมช่างมืออาชีพ
-              ติดตั้งรวดเร็วและได้มาตรฐาน ให้คำปรึกษาฟรี
-              พร้อมแนะนำดีไซน์ที่เหมาะกับคุณ ราคาคุ้มค่า
-              บริการหลังการขายดูแลอย่างดี
-            </p>
+            <div className="text-start leading-relaxed text-sm">
+              ✨เชื่อถือได้ มีผลงานการติดตั้งมากมาย พร้อมรีวิวจากลูกค้าจริง <br/>
+              ✨ทีมช่างมืออาชีพ มีประสบการณ์และความชำนาญในการติดตั้งทุกประเภท <br/>
+              ✨มาตรฐานสูง ใช้วัสดุคุณภาพ รับรองความแข็งแรงและความปลอดภัย <br/>
+              ✨บริการหลังการขายที่ยอดเยี่ยม <br/>
+              พร้อมให้คำปรึกษาลูกค้าตลอดอายุการใช้งาน
+            </div>
           </div>
           <img src={side} alt="" className="w-[50%] rounded-4xl" />
         </div>
       </div>
       <div className="bg-[#0d4927] py-18">
-        <div className="text-center text-white text-lg leading-relaxed flex items-center mx-60 pt-4">
+        <div className="text-center text-white text-lg leading-relaxed flex items-center mx-60 pt-4 gap-8">
           <p className="flex flex-col justify-center items-center">
             <LuWarehouse size={60} />
-            <span className="font-bold py-4">แข็งแรงและทนทาน</span>
+            <span className="font-bold py-4 text-2xl">แข็งแรงและทนทาน</span>
             อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
             เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
           </p>
           <p className="flex flex-col justify-center items-center">
             <MdOutlineEngineering size={60} />
-            <span className="font-bold py-4">ดีไซน์ทันสมัย</span>
+            <span className="font-bold py-4 text-2xl">ดีไซน์ทันสมัย</span>
             กระจกอลูมิเนียมช่วยให้บ้านหรืออาคารของคุณดูโปร่งแสงและโมเดิร์น
             เพิ่มความสวยงามและสไตล์ที่เป็นเอกลักษณ์
           </p>
           <p className="flex flex-col justify-center items-center">
             <BiVolumeMute size={60} />
-            <span className="font-bold py-4">ลดเสียงรบกวน</span>
+            <span className="font-bold py-4 text-2xl">ลดเสียงรบกวน</span>
             กระจกอลูมิเนียมคุณภาพสูงสามารถช่วยลดเสียงรบกวนจากภายนอก
             ทำให้บรรยากาศภายในเงียบสงบมากขึ้น
           </p>
           <p className="flex flex-col justify-center items-center">
             <FaAward size={60} />
-            <span className="font-bold py-4">ดูแลรักษาง่าย</span>
+            <span className="font-bold py-4 text-2xl">ดูแลรักษาง่าย</span>
             วัสดุอลูมิเนียมและกระจกสามารถทำความสะอาดได้ง่าย
             ไม่ต้องกังวลเรื่องเชื้อรา หรือการผุพังเหมือนไม้
           </p>
