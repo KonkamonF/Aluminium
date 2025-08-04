@@ -24,7 +24,11 @@ export default function Body() {
             </p>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="text-center text-[#004d21] leading-relaxed flex items-center mx-60">
+=======
+        <div className="text-center text-[#004d21] text-lg flex items-center mx-60 justify-between">
+>>>>>>> 74d0cb38481e38c9e08dabb65dd1e9d022cfcbea
           <div className="pr-10">
             <p className="text-2xl font-bold pb-4">ทำไมต้องเลือกเรา?</p>
             <div className="text-start leading-relaxed">
@@ -40,7 +44,7 @@ export default function Body() {
           <img src={side} alt="" className="w-[50%] rounded-4xl" />
         </div>
       </div>
-      <div className="bg-[#0d4927] py-18">
+      <div className="bg-[#0d4927] py-18 h-screen flex items-center">
         <div className="text-center text-white text-lg leading-relaxed flex items-center mx-60 pt-4 gap-8">
           <p className="flex flex-col justify-center items-center">
             <LuWarehouse size={60} />
