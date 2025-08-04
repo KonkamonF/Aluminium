@@ -24,11 +24,7 @@ export default function Body() {
             </p>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="text-center text-[#004d21] leading-relaxed flex items-center mx-60">
-=======
         <div className="text-center text-[#004d21] text-lg flex items-center mx-60 justify-between">
->>>>>>> 74d0cb38481e38c9e08dabb65dd1e9d022cfcbea
           <div className="pr-10">
             <p className="text-2xl font-bold pb-4">ทำไมต้องเลือกเรา?</p>
             <div className="text-start leading-relaxed">
