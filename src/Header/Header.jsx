@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <div className="flex items-center flex-col font-bold text-center p-4 text-white bg-[#004d21] ">
           <img src={Banner} alt="" className="rounded-3xl w-[60%]" />
-        <div className="flex flex-col items-center pt-14">
+        <div className="flex flex-col items-center pt-10">
           <p className="text-5xl pt-4">
             ร้านพงษ์เจริญ กระจกอลูมิเนียม สากเหล็ก พิจิตร
           </p>
