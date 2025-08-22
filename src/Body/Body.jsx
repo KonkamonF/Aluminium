@@ -31,7 +31,7 @@ export default function Body() {
 
       {/* Section 2 */}
       <div className="py-12 px-4 md:px-20">
-        <div className="text-[#004d21] text-lg flex flex-col md:flex-row items-center gap-6">
+        <div className="text-[#004d21] text-lg flex flex-col md:flex-row-reverse items-center gap-6">
           {/* Text Content */}
           <div className="md:pr-10 w-full md:w-1/2">
             <p className="text-2xl font-bold pb-4 text-center md:text-left">
