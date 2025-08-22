@@ -11,12 +11,15 @@ export default function Body() {
       {/* Section 1 */}
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto text-[#004d21] flex flex-col md:flex-row items-center gap-8">
-          {/* Image */}
-          <img
-            src={side}
-            alt="กระจกอลูมิเนียมตัวอย่างงานติดตั้ง"
-            className="w-full md:w-1/2 rounded-3xl object-cover"
-          />
+          {/* Image wrapper: คุมอัตราส่วนให้คงที่ */}
+          <div className="w-full md:w-1/2 aspect-[4/3]">
+            <img
+              src={side}
+              alt="กระจกอลูมิเนียมตัวอย่างงานติดตั้ง"
+              className="h-full w-full object-cover rounded-3xl"
+            />
+          </div>
+
           {/* Text */}
           <div className="md:pl-8 w-full md:w-1/2">
             <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight">
@@ -34,12 +37,22 @@ export default function Body() {
       {/* Section 2 */}
       <section className="py-12 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto text-[#004d21] flex flex-col lg:flex-row items-center gap-8">
-          {/* Image: บนในมือถือ / ขวาในเดสก์ท็อป */}
-          <img
-            src={side}
-            alt="ตัวอย่างงานติดตั้งกระจกอลูมิเนียม"
-            className="order-1 lg:order-2 w-full lg:w-1/2 rounded-3xl object-cover"
-          />
+          {/* Image: บนในมือถือ / ขวาในเดสก์ท็อป
+              - ใช้ aspect เดียวกับ Section 1
+              - คุมขนาดช่วง md–ก่อน lg ด้วย max-w เพื่อบาลานซ์กับ Section 1 (ซึ่งเป็น 2 คอลัมน์ในช่วงนั้น)
+          */}
+          <div className="
+              order-1 lg:order-2 w-full lg:w-1/2
+              aspect-[4/3]
+              md:max-w-[680px] md:mx-auto
+              lg:max-w-none
+            ">
+            <img
+              src={side}
+              alt="ตัวอย่างงานติดตั้งกระจกอลูมิเนียม"
+              className="h-full w-full object-cover rounded-3xl"
+            />
+          </div>
 
           {/* Text: ล่างในมือถือ / ซ้ายในเดสก์ท็อป */}
           <div className="order-2 lg:order-1 w-full lg:w-1/2 lg:pr-8">
