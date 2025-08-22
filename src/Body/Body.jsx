@@ -31,12 +31,12 @@ export default function Body() {
 
       {/* Section 2 */}
       <div className="py-12 px-4 lg:px-20">
-        <div className="text-[#004d21] text-lg flex flex-col lg:flex-row items-center gap-6">
+        <div className="text-[#004d21] flex flex-col lg:flex-row-reverse items-center gap-6">
           {/* Image - อยู่บน (mobile) และขวา (desktop) */}
           <img src={side} alt="" className="w-full lg:w-[50%] rounded-3xl" />
 
           {/* Text Content - อยู่ล่าง (mobile) และซ้าย (desktop) */}
-          <div className="lg:pr-10 w-full lg:w-1/2">
+          <div className="lg:pl-10 w-full lg:w-1/2">
             <p className="text-2xl font-bold pb-4 text-center lg:text-left">
               ทำไมต้องเลือกเรา?
             </p>
