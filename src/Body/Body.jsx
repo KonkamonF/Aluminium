@@ -9,79 +9,97 @@ export default function Body() {
   return (
     <>
       {/* Section 1 */}
-      <div className="py-12 px-4 md:px-20">
-        <div className="text-[#004d21] flex flex-col md:flex-row items-center gap-6">
+      <section className="py-12 px-4">
+        <div className="max-w-7xl mx-auto text-[#004d21] flex flex-col md:flex-row items-center gap-8">
           {/* Image */}
-          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl" />
-          {/* Text Content */}
-          <div className="md:pl-10">
-            <p className="text-2xl font-bold text-center md:text-left">
-              บริการติดตั้งกระจกอลูมิเนียม
-              เพิ่มความทันสมัยให้กับบ้านและอาคารของคุณ
-            </p>
-            <p className="text-start leading-relaxed pt-4">
+          <img
+            src={side}
+            alt="กระจกอลูมิเนียมตัวอย่างงานติดตั้ง"
+            className="w-full md:w-1/2 rounded-3xl object-cover"
+          />
+          {/* Text */}
+          <div className="md:pl-8 w-full md:w-1/2">
+            <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight">
+              บริการติดตั้งกระจกอลูมิเนียม เพิ่มความทันสมัยให้กับบ้านและอาคารของคุณ
+            </h2>
+            <p className="mt-4 text-base sm:text-lg lg:text-xl leading-relaxed text-start">
               กระจกอลูมิเนียมเป็นวัสดุที่ได้รับความนิยมอย่างมากในงานก่อสร้างและตกแต่ง
-              เนื่องจากมีคุณสมบัติที่โดดเด่น ทั้งในด้านความแข็งแรง ความทนทาน
-              และการออกแบบที่ทันสมัย ซึ่งช่วยเสริมภาพลักษณ์ของบ้าน อาคารสำนักงาน
-              หรือร้านค้าให้ดูโปร่งโล่ง หรูหรา และทันสมัยขึ้น
+              ด้วยความแข็งแรง ทนทาน และดีไซน์ที่ทันสมัย ช่วยเสริมภาพลักษณ์ของบ้าน
+              อาคารสำนักงาน หรือร้านค้าให้โปร่งโล่ง หรูหรา และทันสมัยขึ้น
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Section 2 */}
-      <div className="py-12 px-4 lg:px-20">
-        <div className="text-[#004d21] flex flex-col lg:flex-row-reverse items-center gap-6">
-          {/* Image - อยู่บน (mobile) และขวา (desktop) */}
-          <img src={side} alt="" className="w-full lg:w-[50%] rounded-3xl" />
+      <section className="py-12 px-4 lg:px-8">
+        <div className="max-w-7xl mx-auto text-[#004d21] flex flex-col lg:flex-row items-center gap-8">
+          {/* Image: บนในมือถือ / ขวาในเดสก์ท็อป */}
+          <img
+            src={side}
+            alt="ตัวอย่างงานติดตั้งกระจกอลูมิเนียม"
+            className="order-1 lg:order-2 w-full lg:w-1/2 rounded-3xl object-cover"
+          />
 
-          {/* Text Content - อยู่ล่าง (mobile) และซ้าย (desktop) */}
-          <div className="lg:pl-10 w-full lg:w-1/2">
-            <p className="text-2xl font-bold pb-4 text-center lg:text-left">
+          {/* Text: ล่างในมือถือ / ซ้ายในเดสก์ท็อป */}
+          <div className="order-2 lg:order-1 w-full lg:w-1/2 lg:pr-8">
+            <h3 className="font-bold text-2xl sm:text-3xl lg:text-4xl pb-4 text-center lg:text-left leading-tight">
               ทำไมต้องเลือกเรา?
-            </p>
-            <div className="text-start leading-relaxed">
-              ✨เชื่อถือได้ มีผลงานการติดตั้งมากมาย พร้อมรีวิวจากลูกค้าจริง{" "}
-              <br />
-              ✨ทีมช่างมืออาชีพ มีประสบการณ์และความชำนาญในการติดตั้งทุกประเภท{" "}
-              <br />
-              ✨มาตรฐานสูง ใช้วัสดุคุณภาพ รับรองความแข็งแรงและความปลอดภัย <br />
-              ✨บริการหลังการขายที่ยอดเยี่ยม <br />
-              พร้อมให้คำปรึกษาลูกค้าตลอดอายุการใช้งาน
+            </h3>
+            <div className="text-base sm:text-lg lg:text-xl leading-relaxed text-start space-y-2">
+              <p>✨ เชื่อถือได้ มีผลงานการติดตั้งมากมาย พร้อมรีวิวจากลูกค้าจริง</p>
+              <p>✨ ทีมช่างมืออาชีพ มีประสบการณ์และความชำนาญในการติดตั้งทุกประเภท</p>
+              <p>✨ มาตรฐานสูง ใช้วัสดุคุณภาพ รับรองความแข็งแรงและความปลอดภัย</p>
+              <p>✨ บริการหลังการขายที่ยอดเยี่ยม พร้อมให้คำปรึกษาตลอดอายุการใช้งาน</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Section 3 - Feature Icons */}
-      <div className="bg-[#0d4927] py-12 px-4">
-        <div className="text-white text-lg leading-relaxed grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          <div className="flex flex-col justify-center items-center text-center">
-            <LuWarehouse size={60} />
-            <span className="font-bold py-4 text-2xl">แข็งแรงและทนทาน</span>
-            อลูมิเนียมเป็นวัสดุที่ไม่เป็นสนิมและสามารถทนต่อสภาพอากาศได้ดี
-            เหมาะสำหรับการใช้งานทั้งภายในและภายนอก
+      <section className="bg-[#0d4927] py-12 px-4">
+        <div className="max-w-7xl mx-auto text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center text-center">
+            <LuWarehouse size={60} aria-hidden />
+            <span className="font-bold py-4 text-2xl sm:text-3xl lg:text-4xl leading-tight">
+              แข็งแรงและทนทาน
+            </span>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
+              อลูมิเนียมไม่เป็นสนิม ทนสภาพอากาศ เหมาะทั้งภายในและภายนอก
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-center text-center">
-            <MdOutlineEngineering size={60} />
-            <span className="font-bold py-4 text-2xl">ดีไซน์ทันสมัย</span>
-            กระจกอลูมิเนียมช่วยให้บ้านหรืออาคารของคุณดูโปร่งแสงและโมเดิร์น
-            เพิ่มความสวยงามและสไตล์ที่เป็นเอกลักษณ์
+
+          <div className="flex flex-col items-center text-center">
+            <MdOutlineEngineering size={60} aria-hidden />
+            <span className="font-bold py-4 text-2xl sm:text-3xl lg:text-4xl leading-tight">
+              ดีไซน์ทันสมัย
+            </span>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
+              ช่วยให้บ้านและอาคารดูโปร่ง โมเดิร์น มีเอกลักษณ์
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-center text-center">
-            <BiVolumeMute size={60} />
-            <span className="font-bold py-4 text-2xl">ลดเสียงรบกวน</span>
-            กระจกอลูมิเนียมคุณภาพสูงสามารถช่วยลดเสียงรบกวนจากภายนอก
-            ทำให้บรรยากาศภายในเงียบสงบมากขึ้น
+
+          <div className="flex flex-col items-center text-center">
+            <BiVolumeMute size={60} aria-hidden />
+            <span className="font-bold py-4 text-2xl sm:text-3xl lg:text-4xl leading-tight">
+              ลดเสียงรบกวน
+            </span>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
+              กระจกคุณภาพช่วยลดเสียงจากภายนอก เพิ่มความเงียบสงบ
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-center text-center">
-            <FaAward size={60} />
-            <span className="font-bold py-4 text-2xl">ดูแลรักษาง่าย</span>
-            วัสดุอลูมิเนียมและกระจกสามารถทำความสะอาดได้ง่าย
-            ไม่ต้องกังวลเรื่องเชื้อรา หรือการผุพังเหมือนไม้
+
+          <div className="flex flex-col items-center text-center">
+            <FaAward size={60} aria-hidden />
+            <span className="font-bold py-4 text-2xl sm:text-3xl lg:text-4xl leading-tight">
+              ดูแลรักษาง่าย
+            </span>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
+              ทำความสะอาดง่าย ไม่กังวลเชื้อรา หรือการผุพังเหมือนไม้
+            </p>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
