@@ -1,23 +1,28 @@
 import React from "react";
-import Logo from "../assets/PG.png";
 import Banner from "../assets/Banner.png";
 
 export default function Header() {
   return (
-    <>
-      <div className="flex items-center flex-col font-bold text-center p-4 text-white bg-[#004d21]">
-          <img src={Banner} alt="" className="rounded-3xl w-[60%]" />
-        <div className="flex flex-col items-center pt-10">
-          <p className="text-5xl pt-4">
-            ร้านพงษ์เจริญ กระจกอลูมิเนียม สากเหล็ก พิจิตร
-          </p>
-          <p className="text-5xl font-thin pt-4">
-            รับติดตั้ง กั้นห้อง ซ่อมแซ่ม กระจกอลูมิเนียม
-          </p>
-          <p className="text-5xl pt-3">โทร 081-973-3078</p>
-          {/* <p className="text-5xl pt-3">โทร 081-973-3078</p> */}
-        </div>
+    <div className="flex flex-col items-center text-center font-bold p-4 text-white bg-[#004d21]">
+      {/* Banner Image */}
+      <img
+        src={Banner}
+        alt="Banner"
+        className="rounded-3xl w-full sm:w-[80%] md:w-[60%]"
+      />
+
+      {/* Header Text */}
+      <div className="flex flex-col items-center pt-6 px-4">
+        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl pt-2 leading-tight">
+          ร้านพงษ์เจริญ กระจกอลูมิเนียม สากเหล็ก พิจิตร
+        </p>
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-thin pt-4 leading-snug">
+          รับติดตั้ง กั้นห้อง ซ่อมแซ่ม กระจกอลูมิเนียม
+        </p>
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-3 leading-snug">
+          โทร 081-973-3078
+        </p>
       </div>
-    </>
+    </div>
   );
 }
