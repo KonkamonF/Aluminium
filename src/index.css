@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
 body {
-  font-family: 'Mali', sans-serif;
+  font-family: 'Athiti', sans-serif;
 }
