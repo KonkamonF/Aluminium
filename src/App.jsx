@@ -6,9 +6,11 @@ import Footer from "./Footer/Footer";
 export default function App() {
   return (
     <>
-      <Header />
-      <Body />
-      <Footer/>
+      <div className="font-Mali">
+        <Header />
+        <Body />
+        <Footer />
+      </div>
     </>
   );
 }

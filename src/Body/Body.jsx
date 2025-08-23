@@ -54,7 +54,7 @@ export default function Body() {
 
       {/* Section 3 - Feature Icons */}
       <div className="bg-[#0d4927] py-12 px-4">
-        <div className="text-white text-lg leading-relaxed grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="text-white text-sm leading-relaxed grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           <div className="flex flex-col justify-center items-center text-center">
             <LuWarehouse size={60} />
             <span className="font-bold py-4 text-2xl">แข็งแรงและทนทาน</span>
