@@ -7,7 +7,7 @@ import E from "../assets/E.png";
 
 export default function SlideBody({
   images = [A, B, C, D, E],
-  interval = 3000,
+  interval = 2000,
   title = "Explore Russia",
   subtitle = "Caucasus Mountains",
 }) {
