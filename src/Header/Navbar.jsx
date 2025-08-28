@@ -11,21 +11,19 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#004d21] text-amber-600 sticky top-0 z-50">
-      {/* Top row */}
       <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-        {/* (Optional) โลโก้/ชื่อย่อ */}
         <span className="text-sm font-semibold tracking-wide md:hidden">
           PONGCHAROEN
         </span>
 
         {/* Desktop pill menu */}
         <div className="hidden md:flex w-full justify-center">
-          <div className="border-2 border-amber-600 rounded-full overflow-hidden">
-            {links.map((l, i) => (
+          <div className="flex border-2 border-amber-600 rounded-full overflow-hidden">
+            {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="block px-8 py-2 lg:px-12 hover:bg-amber-600 hover:text-white hover:font-semibold transition-colors first:rounded-l-full last:rounded-r-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+                className="block px-8 py-2 lg:px-12 hover:bg-amber-600 hover:text-white transition-colors first:rounded-l-full last:rounded-r-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
               >
                 {l.label}
               </a>
