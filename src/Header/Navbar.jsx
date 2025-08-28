@@ -10,9 +10,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#004d21] text-amber-600 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-        <span className="text-sm font-semibold tracking-wide md:hidden">
+    <nav className="bg-[#004d21] text-amber-600 sticky top-0 z-50 pb-4">
+      <div className="max-w-7xl mx-auto px-4 h-18 flex items-center justify-between">
+        <span className="font-semibold tracking-wide md:hidden text-white">
           PONGCHAROEN
         </span>
 
@@ -33,7 +33,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-amber-600 hover:bg-amber-600 hover:text-white transition"
+          className="md:hidden inline-flex items-center justify-center p-2 rounded-full border-2 border-amber-600 hover:bg-amber-600 hover:text-white transition"
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
           aria-label="Toggle menu"
@@ -44,16 +44,16 @@ export default function Navbar() {
 
       {/* Mobile dropdown panel */}
       <div
-        className={`md:hidden px-4 pb-3 overflow-hidden transition-[max-height] duration-300 ${
-          open ? "max-h-96" : "max-h-0"
+        className={`md:hidden px-4 text-center overflow-hidden transition-[max-height] duration-100 ${
+          open ? "max-h-52" : "max-h-0"
         }`}
       >
-        <div className="border-2 border-amber-600 rounded-2xl bg-[#004d21] divide-y divide-amber-600/50">
+        <div className="border-2 border-amber-600 rounded-3xl bg-[#004d21] divide-y divide-amber-600/80">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="block px-4 py-3 hover:bg-amber-600 hover:text-white hover:font-semibold transition-colors"
+              className="block px-4 py-3 hover:text-white hover:font-bold transition-colors"
               onClick={() => setOpen(false)}
             >
               {l.label}
