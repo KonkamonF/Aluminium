@@ -1,16 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-/**
- * AutoSlideHero
- * - Fully responsive image slider/hero
- * - Autoplays with smooth animation
- * - Pause on hover, resume on mouse leave
- * - Clickable dots & arrows
- * - Pure React + Tailwind (no external libs)
- *
- * Usage:
- * <AutoSlideHero images={["/img/1.jpg", "/img/2.jpg", "/img/3.jpg"]} interval={4500} />
- */
 
 export default function SlideBody({
   images = [
