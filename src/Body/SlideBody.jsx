@@ -28,7 +28,7 @@ export default function SlideBody({
 
   return (
     <section
-      className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-black text-white"
+      className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden bg-black text-white"
       onMouseEnter={() => (hoveringRef.current = true)}
       onMouseLeave={() => (hoveringRef.current = false)}
     >
@@ -38,7 +38,7 @@ export default function SlideBody({
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <div key={i} className="relative w-full shrink-0">
+          <div key={i} className="relative w-full h-full shrink-0">
             <img
               src={src}
               alt={`slide-${i + 1}`}
