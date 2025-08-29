@@ -14,10 +14,18 @@ export default function Footer() {
 
         {/* ไอคอนโซเชียลมีเดีย */}
         <div className="flex gap-6 text-2xl items-center justify-center md:justify-end">
-          <FaLine className="hover:text-green-600 cursor-pointer" />
-          <FaSquareFacebook className="hover:text-blue-600 cursor-pointer" />
-          <FaMapPin className="hover:text-purple-600 cursor-pointer" />
-          <FaTiktok className="hover:text-black cursor-pointer" />
+          <a href="https://line.me/ti/p/tMKGzcijma">
+            <FaLine className="hover:text-green-600 cursor-pointer" />
+          </a>
+          <a href="https://www.facebook.com/pongcharoen89">
+            <FaSquareFacebook className="hover:text-blue-600 cursor-pointer" />
+          </a>
+          <a href="https://maps.app.goo.gl/WSUTQXxmYHs12rSG6">
+            <FaMapPin className="hover:text-purple-600 cursor-pointer" />
+          </a>
+          <a href="https://www.tiktok.com/@pongcharoen11?_t=ZS-8zH8UvJEFJB&_r=1">
+            <FaTiktok className="hover:text-black cursor-pointer" />
+          </a>
         </div>
       </div>
 
