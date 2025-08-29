@@ -21,7 +21,7 @@ export default function Footer() {
             <FaSquareFacebook className="hover:text-blue-600 cursor-pointer" />
           </a>
           <a href="https://maps.app.goo.gl/WSUTQXxmYHs12rSG6">
-            <FaMapPin className="hover:text-purple-600 cursor-pointer" />
+            <FaMapPin className="hover:text-red-600 cursor-pointer" />
           </a>
           <a href="https://www.tiktok.com/@pongcharoen11?_t=ZS-8zH8UvJEFJB&_r=1">
             <FaTiktok className="hover:text-black cursor-pointer" />
