@@ -52,7 +52,7 @@ export default function Body() {
       </div>
 
       {/* Section 3 - Feature Icons */}
-      <div className="bg-[#0d4927] h-full flex items-center justify-center px-4 md:h-screen">
+      <div className="bg-[#0d4927] h-full flex items-center justify-center px-4 py-12 md:h-screen">
         <div className="text-white leading-relaxed grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           <div className="flex flex-col justify-center items-center text-center">
             <LuWarehouse size={60} />

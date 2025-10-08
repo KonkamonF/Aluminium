@@ -31,7 +31,7 @@ export default function SlideBody({
     <>
       <div className="flex flex-col items-center text-center bg-[#0d4927] pt-8">
         <section
-          className="relative overflow-hidden bg-[#0d4927] flex justify-center items-center w-[950px] md:w-full max-w-7xl rounded-3xl shadow-2xl"
+          className="relative overflow-hidden bg-[#0d4927] flex justify-center items-center md:w-full max-w-7xl"
           onMouseEnter={() => (hoveringRef.current = true)}
           onMouseLeave={() => (hoveringRef.current = false)}
         >
