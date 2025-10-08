@@ -10,7 +10,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#004d21] text-white sticky top-0 z-50 pb-4">
+    <nav className="bg-[#004d21] text-white sticky top-0 z-50 pb-1">
       <div className="max-w-7xl mx-auto px-4 h-18 flex items-center justify-between">
         <span className="font-semibold tracking-wide md:hidden text-white">
           PONGCHAROEN
@@ -23,7 +23,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="block px-8 py-2 lg:px-12 hover:bg-white hover:text-amber-600 transition-colors first:rounded-l-full last:rounded-r-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+                className="block px-8 py-2 lg:px-24 hover:bg-white hover:text-amber-600 transition-colors first:rounded-l-full last:rounded-r-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
               >
                 {l.label}
               </a>

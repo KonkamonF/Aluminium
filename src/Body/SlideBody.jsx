@@ -28,67 +28,57 @@ export default function SlideBody({
 
   return (
     <section
-      className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden bg-black text-white"
+      className="relative w-full overflow-hidden bg-gray-100 flex justify-center"
       onMouseEnter={() => (hoveringRef.current = true)}
       onMouseLeave={() => (hoveringRef.current = false)}
     >
-      {/* Slides */}
+      {/* Slides Container */}
       <div
-        className="absolute inset-0 flex transition-transform duration-700 ease-out"
+        className="flex transition-transform duration-700 ease-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <div key={i} className="relative w-full h-full shrink-0">
+          <div
+            key={i}
+            className="flex-shrink-0 w-full flex justify-center items-center"
+          >
             <img
               src={src}
               alt={`slide-${i + 1}`}
-              className="w-full h-full object-cover"
+              className="block max-w-full h-auto object-contain"
+              style={{ maxHeight: "650px" }} // ✅ จำกัดความสูงสูงสุด แต่ไม่บังคับอัตราส่วน
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/0" />
           </div>
         ))}
       </div>
 
-      {/* Text overlay (left) */}
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-10 flex items-end md:items-center">
-        <div className="pb-12 md:pb-0">
-          {/* <h1 className="font-extrabold tracking-tight text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95]">
-            {title.split(" ").map((w, i) => (
-              <span key={i} className="block">
-                {w}
-              </span>
-            ))}
-          </h1>
-          <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl text-white/90">
-            Discover dramatic peaks, mirrored lakes, and wild horizons. Plan
-            your next journey with curated tours.
-          </p> */}
-          <div className="flex mx-auto gap-4">
-            <button
-              onClick={prev}
-              className="rounded-full border border-white/60 px-4 py-2 text-sm hover:bg-white hover:text-black transition"
-            >
-              Prev
-            </button>
-            <button
-              onClick={next}
-              className="rounded-full border border-white/60 px-4 py-2 text-sm hover:bg-white hover:text-black transition"
-            >
-              Next
-            </button>
-          </div>
-        </div>
+      {/* Navigation Buttons */}
+      <div className="absolute inset-0 flex items-center justify-between px-6 z-10">
+        <button
+          onClick={prev}
+          className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+        >
+          Prev
+        </button>
+        <button
+          onClick={next}
+          className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+        >
+          Next
+        </button>
       </div>
 
       {/* Dots */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-5 flex gap-2 z-10">
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-4 flex gap-2 z-10">
         {images.map((_, i) => (
           <button
             key={i}
             onClick={() => setIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
             className={`h-2 w-2 rounded-full transition ${
-              i === index ? "bg-white" : "bg-white/50 hover:bg-white/80"
+              i === index
+                ? "bg-white"
+                : "bg-white/60 hover:bg-white/90"
             }`}
           />
         ))}

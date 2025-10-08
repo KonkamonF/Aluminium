@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
     <Navbar/>
-      <div className="flex flex-col items-center text-center font-bold p-4 text-white bg-[#004d21]">
+      <div className="flex flex-col items-center text-center font-bold text-white bg-[#004d21]">
         {/* Banner Image */}
         <img
           src={Banner}
