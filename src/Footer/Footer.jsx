@@ -3,7 +3,7 @@ import { FaLine, FaSquareFacebook, FaMapPin, FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#0d4927] pt-6 pb-4 border-t border-gray-300 relative h-auto flex flex-col justify-between">
+    <footer className="bg-white text-[#0d4927] pt-28 pb-4 border-t border-gray-300 relative h-auto flex flex-col justify-between">
       {/* แถวโลโก้และไอคอนโซเชียล */}
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="relative h-auto">
