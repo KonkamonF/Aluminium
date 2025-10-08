@@ -4,10 +4,11 @@ import B from "../assets/B.png";
 import C from "../assets/C.png";
 import D from "../assets/D.png";
 import E from "../assets/E.png";
+import { FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
 
 export default function SlideBody({
   images = [A, B, C, D, E],
-  interval = 2000,
+  interval = 3000,
   title = "Explore Russia",
   subtitle = "Caucasus Mountains",
 }) {
@@ -58,15 +59,15 @@ export default function SlideBody({
           <div className="absolute inset-0 flex items-center justify-between px-6 z-10">
             <button
               onClick={prev}
-              className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+              className="rounded-full bg-white/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
             >
-              Prev
+              <FaCircleArrowLeft size={20} />
             </button>
             <button
               onClick={next}
-              className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+              className="rounded-full bg-white/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
             >
-              Next
+              <FaCircleArrowRight size={20} />
             </button>
           </div>
 
