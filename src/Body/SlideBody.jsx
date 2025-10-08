@@ -27,62 +27,64 @@ export default function SlideBody({
   }, [interval, images.length]);
 
   return (
-    <section
-      className="relative w-full overflow-hidden bg-gray-100 flex justify-center"
-      onMouseEnter={() => (hoveringRef.current = true)}
-      onMouseLeave={() => (hoveringRef.current = false)}
-    >
-      {/* Slides Container */}
-      <div
-        className="flex transition-transform duration-700 ease-out"
-        style={{ transform: `translateX(-${index * 100}%)` }}
-      >
-        {images.map((src, i) => (
+    <>
+      <div className="flex flex-col items-center text-center bg-[#004d21] pt-8">
+        <section
+          className="relative overflow-hidden bg-gray-100 flex justify-center items-center w-[750px]"
+          onMouseEnter={() => (hoveringRef.current = true)}
+          onMouseLeave={() => (hoveringRef.current = false)}
+        >
+          {/* Slides Container */}
           <div
-            key={i}
-            className="flex-shrink-0 w-full flex justify-center items-center"
+            className="flex transition-transform duration-700 ease-out"
+            style={{ transform: `translateX(-${index * 100}%)` }}
           >
-            <img
-              src={src}
-              alt={`slide-${i + 1}`}
-              className="block max-w-full h-auto object-contain"
-              style={{ maxHeight: "650px" }} // ✅ จำกัดความสูงสูงสุด แต่ไม่บังคับอัตราส่วน
-            />
+            {images.map((src, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 w-full flex justify-center items-center"
+              >
+                <img
+                  src={src}
+                  alt={`slide-${i + 1}`}
+                  className="block max-w-full h-auto object-contain"
+                  style={{ maxHeight: "650px" }} // ✅ จำกัดความสูงสูงสุด แต่ไม่บังคับอัตราส่วน
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      {/* Navigation Buttons */}
-      <div className="absolute inset-0 flex items-center justify-between px-6 z-10">
-        <button
-          onClick={prev}
-          className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
-        >
-          Prev
-        </button>
-        <button
-          onClick={next}
-          className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
-        >
-          Next
-        </button>
-      </div>
+          {/* Navigation Buttons */}
+          <div className="absolute inset-0 flex items-center justify-between px-6 z-10">
+            <button
+              onClick={prev}
+              className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+            >
+              Prev
+            </button>
+            <button
+              onClick={next}
+              className="rounded-full bg-black/40 hover:bg-black/70 text-white px-4 py-2 text-sm transition"
+            >
+              Next
+            </button>
+          </div>
 
-      {/* Dots */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-4 flex gap-2 z-10">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setIndex(i)}
-            aria-label={`Go to slide ${i + 1}`}
-            className={`h-2 w-2 rounded-full transition ${
-              i === index
-                ? "bg-white"
-                : "bg-white/60 hover:bg-white/90"
-            }`}
-          />
-        ))}
+          {/* Dots */}
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-4 flex gap-2 z-10">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setIndex(i)}
+                aria-label={`Go to slide ${i + 1}`}
+                className={`h-2 w-2 rounded-full transition ${
+                  i === index ? "bg-white" : "bg-white/60 hover:bg-white/90"
+                }`}
+              />
+            ))}
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
 }
