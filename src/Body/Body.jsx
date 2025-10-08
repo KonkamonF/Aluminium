@@ -10,9 +10,9 @@ export default function Body() {
     <>
       {/* Section 1 */}
       <div className="py-12 px-4 md:px-20">
-        <div className="text-[#004d21] flex flex-col md:flex-row items-center gap-6">
+        <div className="text-[#0d4927] flex flex-col md:flex-row items-center gap-6">
           {/* Image */}
-          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl" />
+          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl shadow-2xl" />
           {/* Text Content */}
           <div className="md:pl-10">
             <p className="text-2xl font-bold text-center md:text-left">
@@ -31,7 +31,7 @@ export default function Body() {
 
       {/* Section 2 */}
       <div className="py-12 px-4 md:px-20">
-        <div className="text-[#004d21] text-lg flex flex-col-reverse md:flex-row items-center gap-6">
+        <div className="text-[#0d4927] text-lg flex flex-col-reverse md:flex-row items-center gap-6">
           {/* Text Content */}
           <div className="md:pr-10 w-full md:w-1/2">
             <p className="text-2xl font-bold pb-4 text-center md:text-left">
@@ -47,7 +47,7 @@ export default function Body() {
             </div>
           </div>
           {/* Image */}
-          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl" />
+          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl shadow-2xl" />
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#004d21] text-white sticky top-0 z-50 pb-1">
+    <nav className="bg-[#0d4927] text-white sticky top-0 z-50 pb-1">
       <div className="max-w-7xl mx-auto px-4 h-18 flex items-center justify-between">
         <span className="font-semibold tracking-wide md:hidden text-white">
           PONGCHAROEN
@@ -48,7 +48,7 @@ export default function Navbar() {
           open ? "max-h-52" : "max-h-0"
         }`}
       >
-        <div className="border-2 border-white rounded-3xl bg-[#004d21] divide-y divide-white ">
+        <div className="border-2 border-white rounded-3xl bg-[#0d4927] divide-y divide-white ">
           {links.map((l) => (
             <a
               key={l.href}
