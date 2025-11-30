@@ -49,6 +49,7 @@ export default function Body() {
             </div>
           </div>
           {/* Image */}
+          {/* <ImgSlide/> */}
           <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl shadow-2xl" />
         </div>
       </div>
