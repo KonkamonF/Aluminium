@@ -4,6 +4,7 @@ import { LuWarehouse } from "react-icons/lu";
 import { MdOutlineEngineering } from "react-icons/md";
 import { BiVolumeMute } from "react-icons/bi";
 import { FaAward } from "react-icons/fa";
+import ImgSlide from "./ImgSlide";
 
 export default function Body() {
   return (
@@ -12,7 +13,8 @@ export default function Body() {
       <div className="py-12 px-4 md:px-20">
         <div className="text-[#0d4927] flex flex-col md:flex-row items-center gap-6">
           {/* Image */}
-          <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl shadow-2xl" />
+          <ImgSlide/>
+          {/* <img src={side} alt="" className="w-full md:w-[50%] rounded-3xl shadow-2xl" /> */}
           {/* Text Content */}
           <div className="md:pl-10">
             <p className="text-2xl font-bold text-center md:text-left">
